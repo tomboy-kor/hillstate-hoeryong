@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>힐스테이트 회룡역 파크뷰 | 1호선 회룡역세권 1,816세대 대단지</title>
+<meta name="description" content="현대건설 힐스테이트 회룡역 파크뷰 — 1호선 회룡역세권, 총 1,816세대 대단지, 2026년 4월 입주예정. 계약금 500만원, 입주까지 3,000만원.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bronze:#b08d57;
+  --bronze-dark:#8f6f3f;
+  --charcoal:#231f1a;
+  --ink:#2e2a24;
+  --cream:#f8f5ef;
+  --beige:#efe9dd;
+  --white:#ffffff;
+  --red:#a63438;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans KR',sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;word-break:keep-all}
+img{max-width:100%;display:block}
+.serif{font-family:'Noto Serif KR',serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:90px 0}
+.sec-label{display:inline-block;color:var(--bronze);font-size:14px;letter-spacing:4px;font-weight:700;margin-bottom:14px;text-transform:uppercase}
+.sec-title{font-family:'Noto Serif KR',serif;font-size:clamp(26px,4vw,40px);font-weight:900;line-height:1.35;margin-bottom:16px}
+.sec-desc{font-size:16px;color:#6b6558;max-width:640px;margin-bottom:44px}
+.center{text-align:center}
+.center .sec-desc{margin-left:auto;margin-right:auto}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(35,31,26,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(176,141,87,.35)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Noto Serif KR',serif;color:var(--white);font-weight:700;font-size:18px;letter-spacing:1px;text-decoration:none}
+.brand em{color:var(--bronze);font-style:normal}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{color:#d8d2c6;text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--bronze)}
+.nav-cta{background:var(--bronze);color:#fff !important;padding:9px 20px;border-radius:999px;font-weight:700 !important}
+.nav-cta:hover{background:var(--bronze-dark);color:#fff !important}
+@media(max-width:820px){.nav-links li:not(:last-child){display:none}}
+
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--white);padding:120px 20px 80px;background:var(--charcoal)}
+.hero::before{content:"";position:absolute;inset:0;background:url('assets/hero.png') center 30%/cover no-repeat;opacity:.55}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,20,16,.72) 0%,rgba(23,20,16,.35) 45%,rgba(23,20,16,.88) 100%)}
+.hero-inner{position:relative;z-index:2;max-width:860px}
+.hero-eyebrow{letter-spacing:6px;font-size:15px;color:var(--bronze);font-weight:700;margin-bottom:22px}
+.hero h1{font-family:'Noto Serif KR',serif;font-size:clamp(34px,6.5vw,64px);font-weight:900;letter-spacing:2px;line-height:1.3;margin-bottom:20px;text-shadow:0 4px 24px rgba(0,0,0,.45)}
+.hero-sub{font-size:clamp(15px,2.2vw,19px);color:#e8e2d4;margin-bottom:38px;font-weight:300}
+.hero-sub strong{color:#fff;font-weight:700}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:42px}
+.hero-badges span{border:1px solid rgba(176,141,87,.7);background:rgba(0,0,0,.35);padding:8px 18px;border-radius:999px;font-size:14px;letter-spacing:1px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:999px;padding:15px 38px;font-size:16px;transition:.2s;letter-spacing:1px}
+.btn-gold{background:var(--bronze);color:#fff}
+.btn-gold:hover{background:var(--bronze-dark);transform:translateY(-2px)}
+.btn-line{border:1px solid rgba(255,255,255,.6);color:#fff;margin-left:10px}
+.btn-line:hover{background:rgba(255,255,255,.12)}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:#cfc8ba;font-size:12px;letter-spacing:3px;animation:bob 2s infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+/* stat strip */
+.stats{background:var(--charcoal);color:#fff;padding:44px 0;border-top:1px solid rgba(176,141,87,.35)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stat b{display:block;font-family:'Noto Serif KR',serif;font-size:clamp(22px,3vw,32px);color:var(--bronze);font-weight:900;margin-bottom:4px}
+.stat span{font-size:14px;color:#bdb6a8}
+@media(max-width:720px){.stats .wrap{grid-template-columns:repeat(2,1fr)}}
+
+/* video */
+.video-sec{background:var(--beige)}
+.video-frame{border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(35,31,26,.22);background:#000}
+.video-frame video{width:100%;display:block}
+
+/* benefit cards */
+.benefits{background:var(--charcoal);color:#fff}
+.benefits .sec-desc{color:#a49c8c}
+.bene-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.bene{background:rgba(255,255,255,.05);border:1px solid rgba(176,141,87,.35);border-radius:14px;padding:34px 24px;text-align:center}
+.bene .num{font-size:13px;letter-spacing:3px;color:var(--bronze);font-weight:700;display:block;margin-bottom:14px}
+.bene b{font-family:'Noto Serif KR',serif;font-size:22px;display:block;margin-bottom:10px;color:#fff;font-weight:700;line-height:1.4}
+.bene p{font-size:14px;color:#b8b0a0}
+@media(max-width:900px){.bene-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.bene-grid{grid-template-columns:1fr}}
+
+/* payment timeline */
+.pay-table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(35,31,26,.08)}
+.pay-table th{background:var(--charcoal);color:#fff;padding:16px 10px;font-size:15px;font-weight:500;letter-spacing:1px}
+.pay-table td{padding:18px 10px;text-align:center;border-bottom:1px solid #eee;font-size:15px}
+.pay-table .amt{font-family:'Noto Serif KR',serif;font-weight:900;font-size:clamp(16px,2.4vw,22px);color:var(--ink)}
+.pay-table .amt.hl{color:var(--red)}
+.pay-note{margin-top:22px;background:#fff;border-left:4px solid var(--bronze);border-radius:0 10px 10px 0;padding:20px 24px;font-size:14px;color:#6b6558;box-shadow:0 6px 20px rgba(35,31,26,.06)}
+.pay-note li{margin-left:18px;margin-bottom:4px}
+.pay-hero{font-family:'Noto Serif KR',serif;text-align:center;font-size:clamp(20px,3.4vw,30px);font-weight:900;margin-bottom:36px;line-height:1.5}
+.pay-hero em{font-style:normal;color:var(--red)}
+
+/* premium 8 */
+.prem-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.prem{background:#fff;border-radius:14px;padding:30px 22px;box-shadow:0 8px 26px rgba(35,31,26,.07);border-top:3px solid var(--bronze);transition:transform .2s}
+.prem:hover{transform:translateY(-5px)}
+.prem .p-num{font-size:12px;letter-spacing:3px;color:var(--bronze);font-weight:700}
+.prem b{font-family:'Noto Serif KR',serif;display:block;font-size:18px;margin:10px 0 10px;font-weight:700;line-height:1.4}
+.prem p{font-size:13.5px;color:#7a7365}
+@media(max-width:900px){.prem-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.prem-grid{grid-template-columns:1fr}}
+
+/* location */
+.loc-flex{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.loc-map{border-radius:14px;overflow:hidden;box-shadow:0 16px 40px rgba(35,31,26,.14);background:#fff}
+.loc-list{list-style:none}
+.loc-list li{padding:20px 0;border-bottom:1px solid #e4ddcf}
+.loc-list li:first-child{padding-top:0}
+.loc-list b{font-family:'Noto Serif KR',serif;font-size:18px;display:block;margin-bottom:6px}
+.loc-list b i{font-style:normal;color:var(--bronze);margin-right:8px}
+.loc-list p{font-size:14.5px;color:#7a7365}
+@media(max-width:860px){.loc-flex{grid-template-columns:1fr}}
+
+/* complex design */
+.design-sec{background:var(--beige)}
+.design-img{border-radius:14px;overflow:hidden;box-shadow:0 16px 40px rgba(35,31,26,.14);margin-bottom:56px}
+.comm-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.comm-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 8px 26px rgba(35,31,26,.08)}
+.comm-card img{width:100%;height:320px;object-fit:contain;background:#fff;padding:14px}
+.comm-card figcaption{padding:16px 20px 20px;font-size:14px;color:#6b6558;border-top:1px solid #f0ebe0}
+.comm-card figcaption b{display:block;font-size:16px;color:var(--ink);font-family:'Noto Serif KR',serif;margin-bottom:4px}
+@media(max-width:720px){.comm-grid{grid-template-columns:1fr}}
+.h-series{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.h-item{background:var(--charcoal);color:#fff;border-radius:14px;padding:28px 24px}
+.h-item b{font-family:'Noto Serif KR',serif;color:var(--bronze);font-size:19px;display:block;margin-bottom:8px}
+.h-item p{font-size:13.5px;color:#c4bcac}
+@media(max-width:720px){.h-series{grid-template-columns:1fr}}
+
+/* subway strip */
+.subway-strip{margin-top:44px;background:#fff;border-radius:14px;padding:26px 30px;box-shadow:0 10px 30px rgba(35,31,26,.08)}
+.subway-strip img{margin:0 auto;max-width:900px;width:100%}
+
+/* floor plan tabs */
+.type-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:38px}
+.type-tabs button{font-family:'Noto Serif KR',serif;font-size:17px;font-weight:700;padding:12px 28px;border-radius:999px;border:1.5px solid #d8cfbc;background:#fff;color:#7a7365;cursor:pointer;transition:.2s;letter-spacing:1px}
+.type-tabs button:hover{border-color:var(--bronze);color:var(--bronze)}
+.type-tabs button.on{background:var(--bronze);border-color:var(--bronze);color:#fff;box-shadow:0 8px 20px rgba(176,141,87,.35)}
+.type-panel{display:none}
+.type-panel.on{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:start;animation:fadein .4s ease}
+@keyframes fadein{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.plan-img{background:#fff;border-radius:14px;padding:18px;box-shadow:0 14px 36px rgba(35,31,26,.1)}
+.type-info h3{font-family:'Noto Serif KR',serif;font-size:30px;font-weight:900;margin-bottom:4px}
+.type-info h3 small{font-size:15px;color:var(--bronze);font-weight:700;letter-spacing:2px;display:block;margin-bottom:6px}
+.type-info .t-house{display:inline-block;background:var(--charcoal);color:#fff;font-size:13.5px;padding:7px 16px;border-radius:999px;margin:10px 0 20px}
+.area-table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 8px 22px rgba(35,31,26,.07);font-size:14.5px}
+.area-table th{background:#f3eee2;color:#5c543f;font-weight:700;padding:12px 16px;text-align:left;width:110px;font-size:13.5px}
+.area-table td{padding:12px 16px;border-bottom:1px solid #f0ebe0;font-family:'Noto Serif KR',serif;font-weight:600}
+.type-feats{list-style:none;margin-top:20px}
+.type-feats li{font-size:14px;color:#7a7365;padding:6px 0 6px 22px;position:relative}
+.type-feats li::before{content:"";position:absolute;left:4px;top:14px;width:7px;height:7px;border-radius:50%;background:var(--bronze)}
+@media(max-width:860px){.type-panel.on{grid-template-columns:1fr}}
+
+/* price compare */
+.price-sec{background:var(--charcoal);color:#fff}
+.price-sec .sec-desc{color:#a49c8c}
+.price-list{display:flex;flex-direction:column;gap:14px;max-width:760px;margin:0 auto}
+.price-row{display:grid;grid-template-columns:170px 1fr 90px;gap:14px;align-items:center}
+.price-row .p-name{font-size:14px;color:#cfc8ba;text-align:right;line-height:1.4}
+.price-row .p-name small{display:block;color:#8a8272;font-size:12px}
+.p-bar{height:34px;border-radius:6px;background:linear-gradient(90deg,#5a5347,#7d7362);position:relative;min-width:40px}
+.price-row.me .p-bar{background:linear-gradient(90deg,var(--bronze-dark),var(--bronze));box-shadow:0 0 22px rgba(176,141,87,.45)}
+.price-row .p-val{font-family:'Noto Serif KR',serif;font-weight:900;font-size:19px;color:#e8e2d4}
+.price-row.me .p-val{color:var(--bronze)}
+.price-foot{text-align:center;margin-top:34px;font-size:13px;color:#8a8272}
+@media(max-width:640px){.price-row{grid-template-columns:110px 1fr 70px}.price-row .p-name{font-size:12px}}
+
+/* overview tables */
+.ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.ov-table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(35,31,26,.08);font-size:14.5px}
+.ov-table th{background:var(--charcoal);color:#fff;font-weight:500;padding:13px 14px;text-align:left;width:130px;font-size:14px;vertical-align:top}
+.ov-table td{padding:13px 14px;border-bottom:1px solid #f0ebe0}
+.type-table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(35,31,26,.08);font-size:14.5px;text-align:center}
+.type-table th{background:var(--charcoal);color:#fff;font-weight:500;padding:13px 8px;font-size:14px}
+.type-table td{padding:12px 8px;border-bottom:1px solid #f0ebe0}
+.type-table tr.hl td{background:#faf3e6;font-weight:700}
+@media(max-width:860px){.ov-grid{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:linear-gradient(160deg,#2b2620,#171410);color:#fff;text-align:center}
+.contact .sec-title{color:#fff}
+.contact p.lead{color:#b8b0a0;margin-bottom:36px}
+.contact .tel{font-family:'Noto Serif KR',serif;font-size:clamp(30px,5.5vw,52px);font-weight:900;color:var(--bronze);letter-spacing:2px;display:block;text-decoration:none;margin-bottom:10px}
+.contact .tel-note{font-size:13px;color:#8a8272;margin-bottom:36px}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:860px;margin:56px auto 0;align-items:center;text-align:left}
+.visit-map{border-radius:14px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.35)}
+.visit-info dl dt{color:var(--bronze);font-weight:700;font-size:14px;letter-spacing:2px;margin-top:22px}
+.visit-info dl dt:first-child{margin-top:0}
+.visit-info dl dd{color:#d8d2c6;font-size:16.5px;margin-top:6px;line-height:1.6}
+@media(max-width:720px){.visit-grid{grid-template-columns:1fr}}
+
+/* register form */
+.register{background:var(--beige)}
+.reg-card{max-width:640px;margin:0 auto;background:#fff;border-radius:18px;padding:44px 40px;box-shadow:0 20px 50px rgba(35,31,26,.12);border-top:4px solid var(--bronze)}
+.reg-card label{display:block;font-weight:700;font-size:14.5px;margin:22px 0 8px;color:var(--ink)}
+.reg-card label:first-child{margin-top:0}
+.reg-card label .req{color:var(--red);margin-left:3px}
+.reg-card input[type=text],.reg-card input[type=tel],.reg-card textarea{width:100%;border:1.5px solid #ddd5c4;border-radius:10px;padding:13px 16px;font-size:16px;font-family:'Noto Sans KR',sans-serif;color:var(--ink);background:#fdfcf9;transition:border .2s}
+.reg-card input:focus,.reg-card textarea:focus{outline:none;border-color:var(--bronze);background:#fff}
+.reg-card textarea{min-height:120px;resize:vertical}
+.reg-agree{display:flex;align-items:flex-start;gap:10px;margin-top:24px;background:#f7f3ea;border-radius:10px;padding:14px 16px}
+.reg-agree input{margin-top:4px;accent-color:var(--bronze);width:16px;height:16px;flex:none}
+.reg-agree span{font-size:13px;color:#6b6558;line-height:1.6}
+.reg-submit{width:100%;margin-top:26px;background:var(--bronze);color:#fff;border:none;border-radius:999px;padding:16px;font-size:17px;font-weight:700;font-family:'Noto Sans KR',sans-serif;letter-spacing:2px;cursor:pointer;transition:.2s}
+.reg-submit:hover{background:var(--bronze-dark)}
+.reg-submit:disabled{background:#c9bfa9;cursor:wait}
+.reg-msg{margin-top:18px;border-radius:10px;padding:14px 16px;font-size:14px;display:none;line-height:1.6}
+.reg-msg.ok{display:block;background:#eef6ee;color:#2e6b34;border:1px solid #cfe5cf}
+.reg-msg.err{display:block;background:#fbeeee;color:#a63438;border:1px solid #ecd2d2}
+.reg-msg a{color:inherit;font-weight:700}
+
+/* footer */
+footer{background:#12100d;color:#7a7365;padding:44px 0;font-size:12.5px;line-height:1.9}
+footer .wrap{max-width:900px}
+footer b{color:#a49c8c}
+
+.fade{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.fade.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">HILLSTATE <em>회룡역 파크뷰</em></a>
+    <ul class="nav-links">
+      <li><a href="#benefit">분양혜택</a></li>
+      <li><a href="#premium">프리미엄</a></li>
+      <li><a href="#location">입지환경</a></li>
+      <li><a href="#design">단지안내</a></li>
+      <li><a href="#type">평형안내</a></li>
+      <li><a href="#overview">사업개요</a></li>
+      <li><a class="nav-cta" href="#register">관심고객등록</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">HYUNDAI ENGINEERING &amp; CONSTRUCTION</p>
+    <h1>힐스테이트<br>회룡역 파크뷰</h1>
+    <p class="hero-sub">서울 초인접 <strong>1호선 회룡역세권</strong> · 총 <strong>1,816세대</strong> 브랜드 대단지<br>의정부 호원동의 새로운 주거 기준이 시작됩니다</p>
+    <div class="hero-badges">
+      <span>2026년 4월 입주예정</span>
+      <span>지하 3층 ~ 지상 33층 · 12개동</span>
+      <span>선착순 동·호 지정</span>
+      <span>80개월 연속 브랜드 평판 1위</span>
+    </div>
+    <div>
+      <a class="btn btn-gold" href="#register">관심고객 등록하기</a>
+      <a class="btn btn-line" href="#benefit">분양 혜택 보기</a>
+    </div>
+  </div>
+  <div class="scroll-hint">SCROLL</div>
+</header>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>1,816세대</b><span>총 세대수 (일반분양 674세대)</span></div>
+    <div class="stat"><b>회룡역</b><span>1호선 · 의정부경전철 역세권</span></div>
+    <div class="stat"><b>약 2,600평</b><span>의정부 최대 수준 커뮤니티</span></div>
+    <div class="stat"><b>세대당 1.31대</b><span>넉넉한 주차 (총 2,436대)</span></div>
+  </div>
+</div>
+
+<section class="video-sec" id="video">
+  <div class="wrap center fade">
+    <span class="sec-label">Brand Film</span>
+    <h2 class="sec-title">영상으로 만나는<br>힐스테이트 회룡역 파크뷰</h2>
+    <p class="sec-desc">단지의 가치와 프리미엄을 영상으로 확인해 보세요.</p>
+    <div class="video-frame">
+      <video src="assets/video.mp4" controls playsinline preload="metadata" poster="assets/hero.png"></video>
+    </div>
+  </div>
+</section>
+
+<section class="benefits" id="benefit">
+  <div class="wrap fade">
+    <div class="center">
+      <span class="sec-label">Benefit</span>
+      <h2 class="sec-title" style="color:#fff">자금 부담을 확 낮춘<br>특별한 분양 조건</h2>
+      <p class="sec-desc" style="margin-left:auto;margin-right:auto">10.15 부동산 대책 이전 입주자모집공고 승인 단지로, 이번 대출 규제가 적용되지 않는 비규제 수혜 단지입니다.</p>
+    </div>
+    <div class="bene-grid">
+      <div class="bene"><span class="num">BENEFIT 01</span><b>입주까지<br>3,000만원</b><p>계약금 500만원 + 중도금 2,500만원. 초기 자금 부담 최소화</p></div>
+      <div class="bene"><span class="num">BENEFIT 02</span><b>잔금 2억원<br>24개월 유예</b><p>유예금 2억원, 실입주일로부터 무이자 대여 조건</p></div>
+      <div class="bene"><span class="num">BENEFIT 03</span><b>비규제 3無<br>LTV 70%</b><p>실거주 의무 없음 · 취득세/양도세 중과 없음 · LTV 최대 70%</p></div>
+      <div class="bene"><span class="num">BENEFIT 04</span><b>계약 축하금<br>500만원</b><p>중도금 납부 시 계약 축하금 500만원 지급</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="payment">
+  <div class="wrap fade">
+    <div class="center">
+      <span class="sec-label">Payment Plan</span>
+      <h2 class="sec-title">분양대금 납부 조건</h2>
+      <p class="sec-desc" style="margin-left:auto;margin-right:auto">분양가 8.3억원 기준 예시입니다. 잔금 2억원은 계약 후 24개월까지 유예됩니다.</p>
+    </div>
+    <p class="pay-hero">계약금 500만원, <em>입주까지 단 3,000만원</em>으로 내 집 마련!</p>
+    <table class="pay-table">
+      <thead>
+        <tr><th>구분</th><th>계약금</th><th>중도금</th><th>잔금 (실입주)</th><th>유예금</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>납부 시기</td><td>계약 시</td><td>계약 후 1개월 내</td><td>계약 후 6개월 내</td><td>계약 후 24개월 내</td>
+        </tr>
+        <tr>
+          <td>금액</td>
+          <td class="amt hl">500만원</td>
+          <td class="amt hl">2,500만원</td>
+          <td class="amt">6.0억원</td>
+          <td class="amt">2.0억원</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pay-note">
+      <ul>
+        <li>잔금 중 2억원은 계약 후 24개월까지 유예되며, 유예금은 실입주일로부터 무이자 대여됩니다. (실입주는 계약금·중도금·잔금 완납 시 가능)</li>
+        <li>선납 할인: 잔금·유예금 선납 시 연 6.0% 선납 할인 적용</li>
+        <li>중도금 납부 시 계약 축하금 500만원 지급</li>
+        <li>발코니 확장비는 유예 불가 (실입주 시 납입 필요) · 잔금 대출 시 1순위 대출은행, 2순위 채권최고액 2.4억원 설정</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="design-sec" id="premium" style="padding-bottom:0">
+  <div class="wrap center fade" style="padding-bottom:90px">
+    <span class="sec-label">Premium 8</span>
+    <h2 class="sec-title">힐스테이트 회룡역 파크뷰<br>8가지 프리미엄</h2>
+    <p class="sec-desc" style="margin-left:auto;margin-right:auto">교통·교육·생활·브랜드까지, 대체 불가능한 가치를 담았습니다.</p>
+    <div class="prem-grid" style="text-align:left">
+      <div class="prem"><span class="p-num">PREMIUM 1</span><b>서울생활권 쾌속 교통망</b><p>1호선 회룡역세권 (서울 2정거장 5분대, 강남 40분대), GTX-C 의정부역 예정, 회룡IC 계획, 동부간선도로 지하화 등</p></div>
+      <div class="prem"><span class="p-num">PREMIUM 2</span><b>도보통학 학군 · 명문 학원가</b><p>호원초·호원중 도보 통학, 호원동·노원 학원가 인접, 아발론교육 단지 내 상가 입점 예정</p></div>
+      <div class="prem"><span class="p-num">PREMIUM 3</span><b>All in One 생활인프라</b><p>신세계백화점, 롯데마트, 로데오거리, 코스트코, 의정부예술의전당, 시청 등 한걸음에 누리는 생활환경</p></div>
+      <div class="prem"><span class="p-num">PREMIUM 4</span><b>도심 속 힐링 라이프</b><p>도봉산, 사패산, 수락산, 중랑천 수변공원, 북한산 둘레길 등 천혜의 자연을 품은 에코 프리미엄</p></div>
+      <div class="prem"><span class="p-num">PREMIUM 5</span><b>대단지 &amp; 대규모 커뮤니티</b><p>총 1,816세대 / 힐스라운지, 키즈플레이룸, 게스트하우스, 조식서비스(딜리버리, 유상) 등</p></div>
+      <div class="prem"><span class="p-num">PREMIUM 6</span><b>단지 내 국공립 어린이집(예정)</b><p>어린 자녀들이 안심하고 이용할 수 있는 단지 내 국공립 어린이집 (예정)</p></div>
+      <div class="prem"><span class="p-num">PREMIUM 7</span><b>현대건설 H시리즈</b><p>H 사일런트 홈(층간소음 저감), H 오토존(셀프 건식세차), H 위드펫(반려동물 친화시설)</p></div>
+      <div class="prem"><span class="p-num">PREMIUM 8</span><b>힐스테이트 브랜드 가치</b><p>베스트 아파트 브랜드 1위, 80개월 연속 브랜드 평판지수 1위, 현대건설 힐스테이트 브랜드 프리미엄</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="location">
+  <div class="wrap fade">
+    <span class="sec-label">Location</span>
+    <h2 class="sec-title">서울 초인접 호원동,<br>모든 인프라가 도보 생활권</h2>
+    <p class="sec-desc">1호선 회룡역세권, 도보 통학 학세권 등 교통·교육·생활 인프라가 풍부한 입지입니다.</p>
+    <div class="loc-flex">
+      <div class="loc-map"><img src="assets/locmap2.jpg" alt="힐스테이트 회룡역 파크뷰 광역 입지도 — 1호선 회룡역, GTX-C 노선, 호원초·호원중 인접"></div>
+      <ul class="loc-list">
+        <li><b><i>01</i>서울 단 2정거장, 준서울 생활권</b><p>1호선 회룡역세권 (서울 2정거장 5분대, 강남 40분대), 수도권제1순환고속도로·동부간선도로 등 우수한 서울 접근성</p></li>
+        <li><b><i>02</i>도보통학 · 명문 학원가 인접</b><p>초·중교 도보통학으로 안전한 등하굣길, 호원동·노원 학원가 인접</p></li>
+        <li><b><i>03</i>도심 속 쾌적한 힐링 라이프</b><p>북한산 둘레길, 중랑천 수변공원, 도봉산·사패산·수락산의 쾌적한 자연환경</p></li>
+        <li><b><i>04</i>All in One 생활인프라</b><p>신세계백화점, 롯데마트, 의정부 로데오거리, 의정부예술의전당, 시청 등 편리한 생활환경</p></li>
+      </ul>
+    </div>
+    <div class="subway-strip"><img src="assets/subway.jpg" alt="회룡역 → 도봉산역 서울 진입 2정거장, 7호선 환승 강남구청역 약 40분대"></div>
+  </div>
+</section>
+
+<section class="design-sec" id="design">
+  <div class="wrap fade">
+    <div class="center">
+      <span class="sec-label">Complex Design</span>
+      <h2 class="sec-title">쾌적함이 다른 단지 설계</h2>
+      <p class="sec-desc" style="margin-left:auto;margin-right:auto">건폐율 18%, 용적률 249%의 쾌적한 단지 설계. 일반분양 기준 주거 선호도 높은 판상형 382세대(81%), 전 타입 수납 특화 설계.</p>
+    </div>
+    <div class="design-img"><img src="assets/aerial.jpg" alt="힐스테이트 회룡역 파크뷰 항공 조감도 — 12개동 1,816세대 대단지"></div>
+    <div class="design-img"><img src="assets/siteplan.png" alt="힐스테이트 회룡역 파크뷰 단지배치도 — 12개동, 중앙광장·잔디광장·어린이집 등"></div>
+    <div class="comm-grid">
+      <figure class="comm-card">
+        <img src="assets/community2.png" alt="커뮤니티 평면 — 작은도서관, 독서실, 키즈플레이룸, 힐스라운지, H위드펫">
+        <figcaption><b>라이브러리 · 키즈플레이룸 · 힐스라운지</b>작은도서관과 독서실, 돌봄센터, 키즈플레이룸, H 위드펫까지 일상을 채우는 커뮤니티</figcaption>
+      </figure>
+      <figure class="comm-card">
+        <img src="assets/community1.png" alt="커뮤니티 평면 — 피트니스, 골프연습장, 사우나, 워크라운지">
+        <figcaption><b>피트니스 · 골프연습장 · 사우나</b>피트니스, 필라테스, GX룸, 스크린골프, 남녀 사우나, 워크라운지 등 약 2,600평 규모</figcaption>
+      </figure>
+    </div>
+    <div class="h-series">
+      <div class="h-item"><b>H 사일런트 홈</b><p>슬래브 두께 상향 + 고성능 복합완충재 적용, 독보적 층간소음 저감 신기술</p></div>
+      <div class="h-item"><b>H 오토존</b><p>지하주차장 셀프 건식세차 공간 — 진공청소기, 에어건 등 차량관리 시스템</p></div>
+      <div class="h-item"><b>H 위드펫</b><p>반려동물 맞춤 목욕공간과 펫드라이 시설을 갖춘 반려동물 전용 친화시설</p></div>
+    </div>
+    <div class="pay-note" style="margin-top:18px">
+      <ul>
+        <li><b>입주민 서비스</b> — 조식 딜리버리 서비스 업체 ㈜유라이프 MOU 체결(유상), 아발론교육 MOU 체결로 입주민 교습비 30% 지원 혜택</li>
+        <li><b>주차 편의</b> — 지하주차장에서 세대까지 바로 연결, 세대당 1.31대 · <b>녹물 제로</b> — 스테인리스 배관 시공</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="type">
+  <div class="wrap fade">
+    <div class="center">
+      <span class="sec-label">Floor Plan</span>
+      <h2 class="sec-title">평형 안내</h2>
+      <p class="sec-desc" style="margin-left:auto;margin-right:auto">59㎡ · 84㎡ 전 타입 침실 3개 구조. 전 타입 현관·드레스룸·팬트리 수납 특화 설계로 넉넉한 수납공간을 제공합니다.</p>
+    </div>
+    <div class="type-tabs">
+      <button class="on" data-type="t84a">84A</button>
+      <button data-type="t84b">84B</button>
+      <button data-type="t84c">84C</button>
+      <button data-type="t59a">59A</button>
+      <button data-type="t59b">59B</button>
+      <button data-type="t59c">59C</button>
+    </div>
+
+    <div class="type-panel on" id="t84a">
+      <div class="plan-img"><img src="assets/plan84a.jpg" alt="84㎡ A타입 평면도 — 침실3, 거실, 주방/팬트리, 드레스룸, 파우더룸, 다용도실"></div>
+      <div class="type-info">
+        <h3><small>TYPE 84A · 판상형</small>84㎡ A</h3>
+        <span class="t-house">총 632세대 중 일반분양 382세대</span>
+        <table class="area-table">
+          <tr><th>전용면적</th><td>84.9771㎡</td></tr>
+          <tr><th>공용면적</th><td>27.9431㎡</td></tr>
+          <tr><th>공급면적</th><td>112.9202㎡ (약 34py)</td></tr>
+          <tr><th>계약면적</th><td>176.7468㎡</td></tr>
+        </table>
+        <ul class="type-feats">
+          <li>일반분양 최다 세대, 주거 선호도 높은 판상형 구조</li>
+          <li>침실 3 + 드레스룸 + 파우더룸 + 부부욕실·가족욕실</li>
+          <li>주방 팬트리 · 현관 팬트리 · 다용도실 수납 특화</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="type-panel" id="t84b">
+      <div class="plan-img"><img src="assets/plan84b.jpg" alt="84㎡ B타입 평면도 — 침실3, 거실, 복도 팬트리, 드레스룸, 파우더룸"></div>
+      <div class="type-info">
+        <h3><small>TYPE 84B</small>84㎡ B</h3>
+        <span class="t-house">총 336세대 중 일반분양 40세대</span>
+        <table class="area-table">
+          <tr><th>전용면적</th><td>84.9626㎡</td></tr>
+          <tr><th>공용면적</th><td>27.7727㎡</td></tr>
+          <tr><th>공급면적</th><td>112.7353㎡ (약 34py)</td></tr>
+          <tr><th>계약면적</th><td>176.5511㎡</td></tr>
+        </table>
+        <ul class="type-feats">
+          <li>침실 3 + 드레스룸 + 파우더룸 + 부부욕실·가족욕실</li>
+          <li>복도 팬트리 · 현관 팬트리 특화 수납 설계</li>
+          <li>독립적인 침실 배치로 프라이버시 강화</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="type-panel" id="t84c">
+      <div class="plan-img"><img src="assets/plan84c.jpg" alt="84㎡ C타입 평면도 — 침실3, 거실, 복도 팬트리, 드레스룸, 파우더룸"></div>
+      <div class="type-info">
+        <h3><small>TYPE 84C</small>84㎡ C</h3>
+        <span class="t-house">총 50세대 중 일반분양 50세대</span>
+        <table class="area-table">
+          <tr><th>전용면적</th><td>84.9533㎡</td></tr>
+          <tr><th>공용면적</th><td>27.9193㎡</td></tr>
+          <tr><th>공급면적</th><td>112.8726㎡ (약 34py)</td></tr>
+          <tr><th>계약면적</th><td>176.6814㎡</td></tr>
+        </table>
+        <ul class="type-feats">
+          <li>전 세대 일반분양되는 희소 타입</li>
+          <li>침실 3 + 드레스룸 + 파우더룸 + 부부욕실·가족욕실</li>
+          <li>복도 팬트리 · 현관 팬트리 특화 수납 설계</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="type-panel" id="t59a">
+      <div class="plan-img"><img src="assets/plan59a.jpg" alt="59㎡ A타입 평면도 — 침실3, 거실, 드레스룸, 파우더룸, 다용도실"></div>
+      <div class="type-info">
+        <h3><small>TYPE 59A</small>59㎡ A</h3>
+        <span class="t-house">총 231세대 중 일반분양 50세대</span>
+        <table class="area-table">
+          <tr><th>전용면적</th><td>59.9936㎡</td></tr>
+          <tr><th>공용면적</th><td>20.6902㎡</td></tr>
+          <tr><th>공급면적</th><td>80.6838㎡ (약 24py)</td></tr>
+          <tr><th>계약면적</th><td>125.7453㎡</td></tr>
+        </table>
+        <ul class="type-feats">
+          <li>침실 3 + 드레스룸 + 파우더룸을 갖춘 알찬 구조</li>
+          <li>부부욕실 · 가족욕실 2개 욕실</li>
+          <li>주방 인접 다용도실 수납 특화</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="type-panel" id="t59b">
+      <div class="plan-img"><img src="assets/plan59b.jpg" alt="59㎡ B타입 평면도 — 침실3, 거실, 드레스룸, 파우더룸, 다용도실"></div>
+      <div class="type-info">
+        <h3><small>TYPE 59B</small>59㎡ B</h3>
+        <span class="t-house">총 146세대 중 일반분양 109세대</span>
+        <table class="area-table">
+          <tr><th>전용면적</th><td>59.9934㎡</td></tr>
+          <tr><th>공용면적</th><td>20.1755㎡</td></tr>
+          <tr><th>공급면적</th><td>80.1689㎡ (약 24py)</td></tr>
+          <tr><th>계약면적</th><td>125.2302㎡</td></tr>
+        </table>
+        <ul class="type-feats">
+          <li>59㎡ 중 일반분양 최다 세대</li>
+          <li>침실 3 + 드레스룸 + 파우더룸 + 욕실 2개</li>
+          <li>주방 인접 다용도실 수납 특화</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="type-panel" id="t59c">
+      <div class="plan-img"><img src="assets/plan59c.jpg" alt="59㎡ C타입 평면도 — 침실3, 거실, 드레스룸, 파우더룸, 다용도실"></div>
+      <div class="type-info">
+        <h3><small>TYPE 59C</small>59㎡ C</h3>
+        <span class="t-house">총 73세대 중 일반분양 43세대</span>
+        <table class="area-table">
+          <tr><th>전용면적</th><td>59.8626㎡</td></tr>
+          <tr><th>공용면적</th><td>20.7406㎡</td></tr>
+          <tr><th>공급면적</th><td>80.6032㎡ (약 24py)</td></tr>
+          <tr><th>계약면적</th><td>125.5663㎡</td></tr>
+        </table>
+        <ul class="type-feats">
+          <li>침실 3 + 드레스룸 + 파우더룸 + 욕실 2개</li>
+          <li>주방 인접 다용도실 수납 특화</li>
+          <li>거실 중심의 개방감 있는 구조</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="price-sec" id="price">
+  <div class="wrap fade">
+    <div class="center">
+      <span class="sec-label">Value</span>
+      <h2 class="sec-title" style="color:#fff">인접 권역 대비<br>합리적인 분양가</h2>
+      <p class="sec-desc" style="margin-left:auto;margin-right:auto">인접 권역 리딩단지 시세와 비교해 보세요. 노원구 대비 약 10억원 낮은 합리적 가격입니다. (84㎡ 기준)</p>
+    </div>
+    <div class="price-list">
+      <div class="price-row"><div class="p-name">서울원아이파크<small>노원구 월계동</small></div><div class="p-bar" style="width:100%"></div><div class="p-val">18.1억</div></div>
+      <div class="price-row"><div class="p-name">동아청솔<small>도봉구 창동</small></div><div class="p-bar" style="width:60%"></div><div class="p-val">10.9억</div></div>
+      <div class="price-row"><div class="p-name">다산자이e편한세상<small>구리 다산</small></div><div class="p-bar" style="width:57%"></div><div class="p-val">10.4억</div></div>
+      <div class="price-row"><div class="p-name">더샵링크시티<small>의정부 의정부동</small></div><div class="p-bar" style="width:51%"></div><div class="p-val">9.2억</div></div>
+      <div class="price-row me"><div class="p-name"><strong>힐스테이트 회룡역 파크뷰</strong><small>의정부 호원동</small></div><div class="p-bar" style="width:47%"></div><div class="p-val">8.5억</div></div>
+    </div>
+    <p class="price-foot">※ 출처: 교육자료 내 권역별 리딩단지 시세 (국토교통부 실거래 기준), 실제와 차이가 있을 수 있습니다.</p>
+  </div>
+</section>
+
+<section id="overview">
+  <div class="wrap fade">
+    <div class="center">
+      <span class="sec-label">Overview</span>
+      <h2 class="sec-title">사업 개요</h2>
+      <p class="sec-desc" style="margin-left:auto;margin-right:auto">호원동은 2004년 이후 실질적 신규 분양이 없던 지역 — 희소가치 높은 신규 브랜드 대단지입니다.</p>
+    </div>
+    <div class="ov-grid">
+      <table class="ov-table">
+        <tr><th>사업명</th><td>힐스테이트 회룡역 파크뷰</td></tr>
+        <tr><th>위치</th><td>경기도 의정부시 호원동 281-21번지 일원</td></tr>
+        <tr><th>건축규모</th><td>지하 3층 ~ 지상 33층, 12개동</td></tr>
+        <tr><th>세대수</th><td>총 1,816세대 (일반분양 674세대)</td></tr>
+        <tr><th>대지면적</th><td>70,666.00㎡ (21,376py)</td></tr>
+        <tr><th>건폐율/용적률</th><td>18.68% / 249.92%</td></tr>
+        <tr><th>주차대수</th><td>총 2,436대 (세대당 1.31대)</td></tr>
+        <tr><th>입주예정</th><td>2026년 4월 예정</td></tr>
+        <tr><th>시공</th><td>현대건설 (시공능력평가 2위, 브랜드 평판 1위)</td></tr>
+      </table>
+      <table class="type-table">
+        <thead><tr><th>타입</th><th>총 세대수</th><th>일반분양</th><th>공급면적</th></tr></thead>
+        <tbody>
+          <tr><td>59A</td><td>231세대</td><td>50세대</td><td>80.6838㎡ (약 24py)</td></tr>
+          <tr><td>59B</td><td>146세대</td><td>109세대</td><td>80.1689㎡ (약 24py)</td></tr>
+          <tr><td>59C</td><td>73세대</td><td>43세대</td><td>80.6032㎡ (약 24py)</td></tr>
+          <tr class="hl"><td>84A</td><td>632세대</td><td>382세대</td><td>112.9202㎡ (약 34py)</td></tr>
+          <tr class="hl"><td>84B</td><td>336세대</td><td>40세대</td><td>112.7353㎡ (약 34py)</td></tr>
+          <tr class="hl"><td>84C</td><td>50세대</td><td>50세대</td><td>112.8726㎡ (약 34py)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="register" id="register">
+  <div class="wrap fade">
+    <div class="center">
+      <span class="sec-label">Registration</span>
+      <h2 class="sec-title">관심고객 등록</h2>
+      <p class="sec-desc" style="margin-left:auto;margin-right:auto">아래 내용을 남겨주시면 담당자가 빠르게 연락드립니다.<br>등록하신 정보는 분양 상담 목적으로만 사용됩니다.</p>
+    </div>
+    <iframe name="regSink" id="regSink" style="display:none" title="submit sink"></iframe>
+    <form class="reg-card" id="regForm" action="https://formsubmit.co/the-realtor@naver.com" method="POST" enctype="multipart/form-data" target="regSink" novalidate>
+      <input type="hidden" name="접수일시" id="regStamp">
+      <input type="hidden" name="_subject" id="regSubject">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="file" name="attachment" id="regFile" style="display:none" tabindex="-1" aria-hidden="true">
+      <label for="regName">성명<span class="req">*</span></label>
+      <input type="text" id="regName" name="성명" placeholder="홍길동" autocomplete="name" required>
+
+      <label for="regPhone">연락처<span class="req">*</span></label>
+      <input type="tel" id="regPhone" name="연락처" placeholder="010-0000-0000" autocomplete="tel" inputmode="tel" required>
+
+      <label for="regMsg">문의사항</label>
+      <textarea id="regMsg" name="문의사항" placeholder="예) 84A 타입 잔여 세대와 견본주택 방문 예약을 문의드립니다."></textarea>
+
+      <label class="reg-agree" style="font-weight:400">
+        <input type="checkbox" id="regAgree" required>
+        <span>[필수] 개인정보 수집·이용에 동의합니다. 수집 항목: 성명, 연락처, 문의사항 / 수집 목적: 분양 상담 및 안내 / 보유 기간: 상담 완료 후 파기. 동의를 거부할 수 있으며, 거부 시 상담 신청이 제한됩니다.</span>
+      </label>
+
+      <button type="submit" class="reg-submit" id="regSubmit">관심고객 등록하기</button>
+      <div class="reg-msg" id="regResult"></div>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap fade">
+    <span class="sec-label">Contact</span>
+    <h2 class="sec-title">관심고객 등록 · 분양 문의</h2>
+    <p class="lead">선착순 동·호 지정 계약 진행 중입니다.<br>견본주택 방문 전 예약하시면 대기 없이 편리하게 상담받으실 수 있습니다.</p>
+    <a class="tel" href="tel:010-2883-2792">010-2883-2792</a>
+    <p class="tel-note">담당자 지용남 · 관심고객 등록 / 견본주택 위치 안내</p>
+    <a class="btn btn-gold" href="tel:010-2883-2792">전화 상담 신청</a>
+    <div class="visit-grid">
+      <div class="visit-map"><img src="assets/yakdo.jpg" alt="현장 및 견본주택 위치도 — 회룡역 인근"></div>
+      <div class="visit-info">
+        <dl>
+          <dt>견본주택 주소</dt><dd>경기도 의정부시 호원동 314-7번지<br>(회룡역 환승주차장 인근)</dd>
+          <dt>현장 위치</dt><dd>경기도 의정부시 호원동 281-21번지</dd>
+          <dt>분양 문의</dt><dd>담당자 지용남 · 010-2883-2792</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>힐스테이트 회룡역 파크뷰</b> · 현장: 경기도 의정부시 호원동 281-21번지 일원 · 견본주택: 호원동 314-7번지 · 입주예정 2026년 4월 · 분양문의: 담당자 지용남 010-2883-2792</p>
+    <p style="margin-top:10px">본 홈페이지에 사용된 이미지(조감도, 배치도, 지도 등)는 소비자의 이해를 돕기 위해 제작된 것으로 실제와 차이가 있을 수 있습니다. 분양 조건 및 각종 혜택은 사업주체의 사정에 따라 변경될 수 있으며, 계약 전 반드시 입주자모집공고 및 견본주택에서 확인하시기 바랍니다. 비규제 관련 내용(LTV, 실거주 의무, 세금 등)은 정부 정책 등으로 변동될 수 있으니 관련 정부기관 및 금융기관에 확인 바랍니다. GTX-C 노선, 회룡IC 등 개발 계획은 관계기관의 사정에 따라 변경 또는 취소될 수 있습니다.</p>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll('.fade').forEach(el => io.observe(el));
+
+document.querySelectorAll('.type-tabs button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.type-tabs button').forEach(b => b.classList.remove('on'));
+    document.querySelectorAll('.type-panel').forEach(p => p.classList.remove('on'));
+    btn.classList.add('on');
+    document.getElementById(btn.dataset.type).classList.add('on');
+  });
+});
+
+/* ===== 관심고객 등록 ===== */
+const REG_EMAIL = 'the-realtor@naver.com';
+/* 구글 스프레드시트 연동: Apps Script 웹앱 배포 URL을 입력하면 접수 내용이 시트에도 저장됨 */
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbw3NyrA6b-D_A_skmqtcStguXJ3ONM9CH9XF1X-xBXXEy1oSwiW_xM-ZBF0lfQ5Uw/exec';
+
+document.getElementById('regForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const form  = e.target;
+  const name  = document.getElementById('regName').value.trim();
+  const phone = document.getElementById('regPhone').value.trim();
+  const msg   = document.getElementById('regMsg').value.trim();
+  const agree = document.getElementById('regAgree').checked;
+  const out   = document.getElementById('regResult');
+  const btn   = document.getElementById('regSubmit');
+  out.className = 'reg-msg';
+
+  if (!name)  { out.className = 'reg-msg err'; out.textContent = '성명을 입력해 주세요.'; return; }
+  if (!/^0\d{1,2}-?\d{3,4}-?\d{4}$/.test(phone.replace(/\s/g,''))) {
+    out.className = 'reg-msg err'; out.textContent = '연락처를 올바르게 입력해 주세요. 예) 010-0000-0000'; return;
+  }
+  if (!agree) { out.className = 'reg-msg err'; out.textContent = '개인정보 수집·이용에 동의해 주세요.'; return; }
+
+  const now = new Date();
+  const pad = n => String(n).padStart(2,'0');
+  const stamp = now.getFullYear() + '-' + pad(now.getMonth()+1) + '-' + pad(now.getDate()) + ' ' + pad(now.getHours()) + ':' + pad(now.getMinutes());
+  const fileStamp = stamp.replace(/[-: ]/g,'').slice(0,12);
+
+  /* 엑셀에서 바로 열리는 CSV (UTF-8 BOM) 첨부파일 생성 */
+  const q = v => '"' + String(v).replace(/"/g,'""') + '"';
+  const csv = String.fromCharCode(0xFEFF) + [
+    ['접수일시','성명','연락처','문의사항'].map(q).join(','),
+    [stamp, name, phone, msg || '-'].map(q).join(',')
+  ].join('\r\n');
+  const csvFile = new File([csv], '관심고객_' + fileStamp + '_' + name + '.csv', { type: 'text/csv' });
+
+  /* 숨김 파일 입력에 CSV 장착 (첨부파일은 일반 폼 전송에서만 발송됨) */
+  const dt = new DataTransfer();
+  dt.items.add(csvFile);
+  document.getElementById('regFile').files = dt.files;
+  document.getElementById('regStamp').value = stamp;
+  document.getElementById('regSubject').value = '[힐스테이트 회룡역 파크뷰] 관심고객 등록 - ' + name;
+
+  btn.disabled = true; btn.textContent = '전송 중...';
+
+  const sink = document.getElementById('regSink');
+  let done = false;
+  const finish = ok => {
+    if (done) return; done = true;
+    btn.disabled = false; btn.textContent = '관심고객 등록하기';
+    if (ok) {
+      out.className = 'reg-msg ok';
+      out.textContent = '관심고객 등록이 완료되었습니다. 담당자가 빠른 시일 내에 연락드리겠습니다. 감사합니다.';
+      form.reset();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const body = '접수일시: ' + stamp + '\n성명: ' + name + '\n연락처: ' + phone + '\n문의사항: ' + (msg || '-');
+      const mailto = 'mailto:' + REG_EMAIL + '?subject=' + encodeURIComponent('[힐스테이트 회룡역 파크뷰] 관심고객 등록 - ' + name) + '&body=' + encodeURIComponent(body);
+      out.className = 'reg-msg err';
+      out.innerHTML = '일시적인 오류로 자동 전송에 실패했습니다. 잠시 후 다시 시도하시거나, <a href="' + mailto + '">여기를 눌러 메일로 직접 보내기</a> 또는 010-2883-2792로 연락 주세요.';
+    }
+  };
+  sink.addEventListener('load', () => finish(true), { once: true });
+  setTimeout(() => finish(false), 20000);
+
+  /* 구글 스프레드시트에도 접수 내용 저장 (설정된 경우) */
+  if (SHEET_URL) {
+    try {
+      fetch(SHEET_URL, {
+        method: 'POST', mode: 'no-cors',
+        body: new URLSearchParams({ 접수일시: stamp, 성명: name, 연락처: phone, 문의사항: msg || '-' })
+      });
+    } catch (_) {}
+  }
+
+  form.submit();
+});
+</script>
+</body>
+</html>
