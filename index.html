@@ -599,7 +599,7 @@ footer b{color:#a49c8c}
       <p class="sec-desc" style="margin-left:auto;margin-right:auto">아래 내용을 남겨주시면 담당자가 빠르게 연락드립니다.<br>등록하신 정보는 분양 상담 목적으로만 사용됩니다.</p>
     </div>
     <iframe name="regSink" id="regSink" style="display:none" title="submit sink"></iframe>
-    <form class="reg-card" id="regForm" action="https://formsubmit.co/the-realtor@naver.com" method="POST" enctype="multipart/form-data" target="regSink" novalidate>
+    <form class="reg-card" id="regForm" method="POST" enctype="multipart/form-data" target="regSink" novalidate>
       <input type="hidden" name="접수일시" id="regStamp">
       <input type="hidden" name="_subject" id="regSubject">
       <input type="hidden" name="_template" value="table">
@@ -666,10 +666,14 @@ document.querySelectorAll('.type-tabs button').forEach(btn => {
   });
 });
 
-/* ===== 관심고객 등록 ===== */
-const REG_EMAIL = 'the-realtor@naver.com';
-/* 구글 스프레드시트 연동: Apps Script 웹앱 배포 URL을 입력하면 접수 내용이 시트에도 저장됨 */
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbw3NyrA6b-D_A_skmqtcStguXJ3ONM9CH9XF1X-xBXXEy1oSwiW_xM-ZBF0lfQ5Uw/exec';
+/* ===== 관심고객 등록 =====
+   이메일/시트주소는 소스에 그대로 노출되지 않도록 인코딩해 두고 실행 시 복원함 (스팸 수집 방지) */
+const REG_EMAIL = atob('dGhlLXJlYWx0b3JAbmF2ZXIuY29t');
+const SHEET_URL = atob('aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J3M055ckE2Yi1EX0Ffc2ttcXRjU3RndVhKM09OTTlDSDlYRjFYLXhCWFhFeTFvU3dpV194TS1aQkYwbGZRNVV3L2V4ZWM=');
+const SHEET_TOKEN = 'SB7jaWjWKlGnrZc';  /* 시트 스팸 등록 차단용 — Apps Script와 값이 일치해야 저장됨 */
+
+/* 폼 전송 주소(FormSubmit)도 실행 시 조립해 소스 노출 최소화 */
+document.getElementById('regForm').action = 'https://formsubmit.co/' + REG_EMAIL;
 
 document.getElementById('regForm').addEventListener('submit', e => {
   e.preventDefault();
@@ -735,7 +739,7 @@ document.getElementById('regForm').addEventListener('submit', e => {
     try {
       fetch(SHEET_URL, {
         method: 'POST', mode: 'no-cors',
-        body: new URLSearchParams({ 접수일시: stamp, 성명: name, 연락처: phone, 문의사항: msg || '-' })
+        body: new URLSearchParams({ token: SHEET_TOKEN, 접수일시: stamp, 성명: name, 연락처: phone, 문의사항: msg || '-' })
       });
     } catch (_) {}
   }
