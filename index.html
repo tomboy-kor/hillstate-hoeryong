@@ -707,6 +707,24 @@ const SHEET_TOKEN = 'SB7jaWjWKlGnrZc';  /* 시트 스팸 등록 차단용 — Ap
 /* 폼 전송 주소(FormSubmit)도 실행 시 조립해 소스 노출 최소화 */
 document.getElementById('regForm').action = 'https://formsubmit.co/' + REG_EMAIL;
 
+/* 연락처: 숫자만 입력하면 하이픈 자동 삽입 (010-0000-0000) */
+document.getElementById('regPhone').addEventListener('input', function () {
+  let d = this.value.replace(/\D/g, '').slice(0, 11);  /* 숫자만, 최대 11자리 */
+  let f;
+  if (d.length < 4) {
+    f = d;
+  } else if (d.length < 7) {
+    f = d.slice(0, 3) + '-' + d.slice(3);
+  } else if (d.length < 11) {
+    /* 10자리(예: 02·지역번호 또는 010-000-0000) */
+    f = d.slice(0, 3) + '-' + d.slice(3, 6) + '-' + d.slice(6);
+  } else {
+    /* 11자리(010-0000-0000) */
+    f = d.slice(0, 3) + '-' + d.slice(3, 7) + '-' + d.slice(7);
+  }
+  this.value = f;
+});
+
 document.getElementById('regForm').addEventListener('submit', e => {
   e.preventDefault();
   const form  = e.target;
@@ -753,7 +771,7 @@ document.getElementById('regForm').addEventListener('submit', e => {
     btn.disabled = false; btn.textContent = '관심고객 등록하기';
     if (ok) {
       out.className = 'reg-msg ok';
-      out.textContent = '관심고객 등록이 완료되었습니다. 담당자가 빠른 시일 내에 연락드리겠습니다. 감사합니다.';
+      out.textContent = name + ' 고객님, 관심고객 등록이 완료되었습니다. 담당자 이진형 매니저가 곧 연락드리겠습니다.';
       form.reset();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
