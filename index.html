@@ -773,7 +773,6 @@ document.getElementById('regForm').addEventListener('submit', e => {
       out.className = 'reg-msg ok';
       out.textContent = name + ' 고객님, 관심고객 등록이 완료되었습니다. 담당자 이진형 매니저가 곧 연락드리겠습니다.';
       form.reset();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       const body = '접수일시: ' + stamp + '\n성명: ' + name + '\n연락처: ' + phone + '\n문의사항: ' + (msg || '-');
       const mailto = 'mailto:' + REG_EMAIL + '?subject=' + encodeURIComponent('[힐스테이트 회룡역 파크뷰] 관심고객 등록 - ' + name) + '&body=' + encodeURIComponent(body);
