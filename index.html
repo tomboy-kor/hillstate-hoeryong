@@ -207,6 +207,9 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .contact p.lead{color:#b8b0a0;margin-bottom:36px}
 .contact .tel{font-family:'Noto Serif KR',serif;font-size:clamp(30px,5.5vw,52px);font-weight:900;color:var(--bronze);letter-spacing:2px;display:block;text-decoration:none;margin-bottom:10px}
 .contact .tel-note{font-size:13px;color:#8a8272;margin-bottom:36px}
+.contact-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.contact-cta .btn-line{margin-left:0}
+@media(max-width:520px){.contact-cta{flex-direction:column;align-items:stretch}.contact-cta .btn-call{display:flex;justify-content:center}}
 .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:860px;margin:56px auto 0;align-items:center;text-align:left}
 .visit-map{border-radius:14px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.35)}
 .visit-info dl dt{color:var(--bronze);font-weight:700;font-size:14px;letter-spacing:2px;margin-top:22px}
@@ -651,7 +654,13 @@ footer b{color:#a49c8c}
     <p class="lead">선착순 동·호 지정 계약 진행 중입니다.<br>견본주택 방문 전 예약하시면 대기 없이 편리하게 상담받으실 수 있습니다.</p>
     <a class="tel" href="tel:010-7675-3098">010-7675-3098</a>
     <p class="tel-note">담당자 이진형 · 관심고객 등록 / 견본주택 위치 안내</p>
-    <a class="btn btn-gold" href="tel:010-7675-3098">전화 상담 신청</a>
+    <div class="contact-cta">
+      <a class="btn btn-gold" href="tel:010-7675-3098">전화 상담 신청</a>
+      <a class="btn btn-call" href="tel:010-7675-3098">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+        지금 전화하기 <span>010-7675-3098</span>
+      </a>
+    </div>
     <div class="visit-grid">
       <div class="visit-map"><img src="assets/yakdo.jpg" alt="현장 및 견본주택 위치도 — 회룡역 인근"></div>
       <div class="visit-info">
