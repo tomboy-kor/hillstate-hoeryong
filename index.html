@@ -77,8 +77,11 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
   .hero-cta{flex-direction:column;align-items:stretch}
   .hero-cta .btn{margin-left:0}
   .hero-call{display:block}
-  .btn-call{display:flex;justify-content:center;padding-left:16px;padding-right:16px;font-size:15px;letter-spacing:0;gap:7px}
-  .btn-call span{letter-spacing:0}
+  .btn-call{display:flex;justify-content:center;padding-left:20px;padding-right:20px;gap:8px}
+}
+/* 아주 좁은 구형 폰(≤340px)에서만 살짝 축소해 한 줄 유지 */
+@media(max-width:340px){
+  .btn-call{font-size:14.5px;padding-left:12px;padding-right:12px;gap:6px}
 }
 .scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:#cfc8ba;font-size:12px;letter-spacing:3px;animation:bob 2s infinite}
 @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
